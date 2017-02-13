@@ -4,15 +4,16 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8">
 	<title></title>
 	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="cncard.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function() { 
-		$('#cardNum').cncard({display:'#showarea'});
-	});
-	</script>
+
 </head>
 <body>
 	<input id="cardNum" type="text" name="cardNum"/>
 	<div id="showarea"></div>
+	<script type="text/javascript" src="banQuery.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function() {
+            $('#cardNum').banQuery({ tipsWrap: '#showarea'});
+        });
+	</script>
 </body>
 </html>
