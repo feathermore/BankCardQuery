@@ -1,4 +1,4 @@
-(function ($) {
+;(function ($) {
     var Query = function (el, options) {
         this.container = $(el);
         this.defaults = {
